@@ -13,6 +13,11 @@ feature_idx = parameters_dict["feature_idx"]
 target_idx = parameters_dict["target_idx"]
 labels, data = load_numpy_array(dir_path, "data.csv")
 
+x = prepend_ones_column(data[:, feature_idx])
+y = data[:, target_idx]
+beta = linear_regression(x, y)
+y_hat = apply_beta(beta, x)
+
 # do standardization before train_test_split
 #if stand:
 #    self.data = self.standardize_features(self.data)
@@ -30,11 +35,6 @@ def standardize_features(data):
     mu = data.mean(axis=0)
     sigma = data.std(axis=0)
     return (data - mu) / sigma
-
-x = prepend_ones_column(data[:, feature_idx])
-y = data[:, target_idx]
-beta = linear_regression(x, y)
-y_hat = apply_beta(beta, x)
 
 
 def prepend_ones_column(A):
