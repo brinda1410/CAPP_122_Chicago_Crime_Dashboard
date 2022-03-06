@@ -1,17 +1,12 @@
 import pandas as pd
 import plotly.express as px
-import dash
+from maindash import app
 from dash import html, dcc
 from dash.dependencies import Input, Output
 
-# Hardcoded filename
-merged_filename = "data/merged_data.csv"
-
 # Read csv
+merged_filename = "data/merged_data.csv"
 crimes = pd.read_csv(merged_filename)
-
-# Initialize app
-app = dash.Dash(__name__)
 
 # Subset ward and crime-type columns
 crimes = crimes.loc[:, 'WARD': 'WEAPONS VIOLATION']
@@ -20,24 +15,22 @@ col_names = crimes.columns[1:] # without WARD column
 
 # App Layout - DCC and HTML components
 crime_layout = html.Div([
-    html.H2("Crime Data", style = {'text-align': 'left'}),
-    html.Br(),
-    html.Label(['Select Type of Crime:'], style={'font-weight': 'bold', "text-align": "left"}),
-    html.Br(),
-    dcc.Dropdown(id = "select_crimetype",
-                options = [{"label": str(x), "value": x} for x in col_names],
-                value = col_names[0],
-                multi = False,
-                style = {'width': "40%"}),
-    html.Div(id = 'output_container', children = []),
-    dcc.Graph(id = 'bar_graph_crime_type_by_ward', figure = {})
-])
+        html.H2("Crime Data", style = {'text-align': 'left'}),
+        html.Br(),
+        html.Label(['Select Type of Crime:'], style={'font-weight': 'bold', "text-align": "left"}),
+        html.Br(),
+        dcc.Dropdown(id = "select_crimetype",
+                    options = [{"label": str(x), "value": x} for x in col_names],
+                    value = col_names[0],
+                    multi = False,
+                    style = {'width': "40%"}),
+        #html.Div(id = 'output_container', children = []),
+        dcc.Graph(id = 'bar_graph_crime_type_by_ward', figure = {})
+    ])
 
 # Connect Plotly graphs with Dash Core Components
-
 @app.callback(
-    [Output(component_id = 'output_container', component_property = 'children'),
-    Output(component_id = 'bar_graph_crime_type_by_ward' , component_property = 'figure')],
+    Output(component_id = 'bar_graph_crime_type_by_ward', component_property = 'figure'),
     [Input(component_id = 'select_crimetype', component_property = 'value')]
     )
 
@@ -47,11 +40,10 @@ def update_graph(crime_slctd):
     pandas dataframe based on user's input value in Dropdown
     'select_crimetype'
     '''
-    container_crime = "The crime type selected by the user is {}".format(crime_slctd)
-    print(container_crime)
+    #container_crime = "The crime type selected by the user is {}".format(crime_slctd)
     crimes_copy = crimes.copy()
     crimes_copy.dropna(subset=[crime_slctd], inplace = True)
-    print(crime_slctd)
-    fig = px.bar(crimes_copy, x = 'WARD', y = crime_slctd, title = 'Crimes disaggregated at ward-level')
-    return container_crime, fig
+    graphtitle = crime_slctd.lower().capitalize() + ' crimes disaggregated at ward-level'
+    fig = px.bar(crimes_copy, x = 'WARD', y = crime_slctd, title = graphtitle)
+    return fig
 
