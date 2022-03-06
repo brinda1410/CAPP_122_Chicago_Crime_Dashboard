@@ -4,7 +4,7 @@ python -m venv env
 
 echo -e "2. Installing Requirements..."
 
-source env/Scripts/activate
+source env/bin/activate
 pip install -r requirements.txt
 
 deactivate 
