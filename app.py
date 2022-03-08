@@ -10,4 +10,4 @@ port = 8050
 if __name__ == '__main__':
     app.layout = make_layout()
     Timer(1, webbrowser.open_new("http://localhost:{}".format(port))).start();
-    app.run_server(debug=True, port=port)
+    app.run_server(debug=False, port=port)
