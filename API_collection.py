@@ -1,20 +1,20 @@
-import requests
-import json
+import sodapy
+from sodapy import Socrata
+import csv
 import pandas as pd
 
-URL_dic = {"crimes": "https://data.cityofchicago.org/resource/qzdf-xmn8.json",\
-    "family_support": "https://data.cityofchicago.org/resource/jmw7-ijg5.json",\
-    "small_business": "https://data.cityofchicago.org/resource/etqr-sz5x.json",\
-    "microloans": "https://data.cityofchicago.org/resource/dpkg-upyz.json"}
+data_identifiers = {"Crimes": ("qzdf-xmn8", "id, primary_type, arrest, domestic, beat, ward"),\
+    "SB": ("etqr-sz5x", "project_name, ward, incentive_amount,"\
+        "total_project_cost, jobs_created_aspirational, jobs_retained_aspirational"),\
+    "Microloans": ("dpkg-upyz", "loan_date, lender, city, state, ward, industry"),\
+    "FSA": ("jmw7-ijg5", "agency, program_model, city, state, ward")}  
 
+client = Socrata("data.cityofchicago.org", "zHR9MYQ5MjXuTZZ19OL8PYuVT")
+client = Socrata("data.cityofchicago.org", "zHR9MYQ5MjXuTZZ19OL8PYuVT")
+for key, tup in data_identifiers.items():
+    identifier, columns = tup
+    results = client.get(identifier, select = columns, limit = 250000)
+    file_namename = "data/" + key + ".csv"
+    df = pd.DataFrame(results)
+    df.to_csv(file_namename, index = False)
 
-def get_pandas_df(URL_dic):
-    
-    df_lst = []
-    for url in URL_dic.values():
-        response = requests.get(url)
-        text_data = json.dumps(response.json())
-        pandas_df = pd.read_json(text_data)
-        df_lst.append(pandas_df)
-    
-    return tuple(df_lst)
