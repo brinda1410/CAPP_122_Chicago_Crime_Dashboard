@@ -14,7 +14,11 @@ an option to perform a task.
 '''
 START = 1
 END = 3
-script_fn = "app.py"
+
+# Files to be run
+app_script = "app.py"
+api_collection = "API_collection.py"
+join_data = "join_data.py"
 
 def retrieve_task():
     option = -1
@@ -33,10 +37,12 @@ OPTIONS_HANDLER = {
 }
 
 def update_data():
-    exec(open(script_fn).read())
+    exec(open(api_collection).read())
+    exec(open(join_data).read())
+
 
 def run_app():
-    exec(open(script_fn).read())
+    exec(open(app_script).read())
 
 def main():
     while True:
