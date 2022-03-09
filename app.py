@@ -12,7 +12,7 @@ from threading import Timer
 
 # Specify the port for url
 
-port = 8050
+port = 8000
 
 if __name__ == '__main__':
     app.layout = make_layout()
