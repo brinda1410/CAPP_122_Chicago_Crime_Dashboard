@@ -16,5 +16,5 @@ for key, tup in data_identifiers.items():
     results = client.get(identifier, select = columns, limit = 250000)
     file_namename = "data/" + key + ".csv"
     df = pd.DataFrame(results)
+    df.columns = df.columns.str.upper()
     df.to_csv(file_namename, index = False)
-

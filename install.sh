@@ -7,5 +7,6 @@ source env/bin/activate
 pip install -r requirements.txt
 python crimes_main.py
 
-deactivate 
-echo -e "Install is complete."
+deactivate
+rm -r env
+echo -e "Bye bye <3"
