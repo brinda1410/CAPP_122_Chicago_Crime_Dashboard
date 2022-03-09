@@ -1,3 +1,7 @@
+'''
+Render graph on Crime Tab only
+'''
+
 import pandas as pd
 import plotly.express as px
 from maindash import app
@@ -8,12 +12,15 @@ from dash.dependencies import Input, Output
 merged_filename = "data/merged_data.csv"
 crimes = pd.read_csv(merged_filename)
 
-# Subset ward and crime-type columns
+# Subset WARD and crime-type columns
 crimes = crimes.loc[:, 'WARD': 'WEAPONS VIOLATION']
 crimes.drop(['FS AGENCIES', 'SB FUNDS', 'MICRO LOANS'], axis = 1, inplace = True)
-col_names = crimes.columns[1:] # without WARD column
+# Remove WARD column
+col_names = crimes.columns[1:]
 
-# App Layout - DCC and HTML components
+# ---------------------------- FRONT-END -------------------------------
+# App layout for Crime tab
+
 crime_layout = html.Div([
         html.H2("Crime Data", style = {'text-align': 'left'}),
         html.Br(),
@@ -24,11 +31,12 @@ crime_layout = html.Div([
                     value = col_names[0],
                     multi = False,
                     style = {'width': "40%"}),
-        #html.Div(id = 'output_container', children = []),
         dcc.Graph(id = 'bar_graph_crime_type_by_ward', figure = {})
     ])
 
-# Connect Plotly graphs with Dash Core Components
+# --------------------------- BACKEND -----------------------------------  
+# Connect the figure contained in Dash Core Components with the frontend
+
 @app.callback(
     Output(component_id = 'bar_graph_crime_type_by_ward', component_property = 'figure'),
     [Input(component_id = 'select_crimetype', component_property = 'value')]
@@ -36,11 +44,15 @@ crime_layout = html.Div([
 
 def update_graph(crime_slctd):
     '''
-    Define the callback function to render filtered
-    pandas dataframe based on user's input value in Dropdown
-    'select_crimetype'
+    Render the graph on the Crime tab based on
+    based on user's input value in Dropdown component
+    'select_crimetype'. This returned figure
+    feeds into the crime_layout variable which
+    stores the frontend for Crime tab.
+
+    Input: 
+        crime_slctd - value selected by user in the dropdown component
     '''
-    #container_crime = "The crime type selected by the user is {}".format(crime_slctd)
     crimes_copy = crimes.copy()
     crimes_copy.dropna(subset=[crime_slctd], inplace = True)
     graphtitle = crime_slctd.lower().capitalize() + ' crimes disaggregated at ward-level'

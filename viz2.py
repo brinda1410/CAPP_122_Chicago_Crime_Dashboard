@@ -18,7 +18,7 @@ def make_layout():
         dcc.Tabs(id = "tabs", value = "tab-crime", children = 
             [
                 dcc.Tab(label="Crime", value="tab-crime"),
-                dcc.Tab(label="Social Investment", value = "tab-si"),
+                dcc.Tab(label="Social Investment", value = "tab-si")
             ]),
         html.Div(id = 'content', children = [])
     ])

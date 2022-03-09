@@ -1,9 +1,16 @@
-###### python3 app.py
+'''
+This module is run in bash to generate an instance of the
+dashboard app using dash package in python.
+
+Run this command in bash: python3 app.py
+'''
 
 from maindash import app
 from viz2 import make_layout
 import webbrowser
 from threading import Timer
+
+# Specify the port for url
 
 port = 8050
 

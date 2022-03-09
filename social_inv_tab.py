@@ -1,3 +1,6 @@
+'''
+Render graph on Social Investment Tab only
+'''
 import pandas as pd
 import plotly.express as px
 from maindash import app
@@ -9,13 +12,14 @@ from dash.dependencies import Input, Output
 merged_filename = "data/merged_data.csv"
 social_inv = pd.read_csv(merged_filename)
 
-# Subset ward and crime-type columns
+# Subset ward and social-inv-type columns
 social_inv = social_inv.loc[:, 'WARD': 'MICRO LOANS']
 social_inv.dropna( axis = 0, inplace = True)
 print(social_inv)
 col_names = social_inv.columns[1:] # without WARD column
 
-# App Layout - DCC and HTML components
+# ---------------------------- FRONT-END -------------------------------
+# App layout for Social Investment tab
 si_layout = html.Div([
         html.H2("Social Investment Data", style = {'text-align': 'left'}),
         html.Br(),
@@ -30,7 +34,9 @@ si_layout = html.Div([
         dcc.Graph(id = 'bar_social_inv_by_ward', figure = {})
     ])
 
-# Connect Plotly graphs with Dash Core Components
+# --------------------------- BACKEND -----------------------------------  
+# Connect the figure contained in Dash Core Components with the frontend
+
 @app.callback(
     Output(component_id = 'bar_social_inv_by_ward', component_property = 'figure'),
     [Input(component_id = 'select_type', component_property = 'value')]
@@ -38,11 +44,15 @@ si_layout = html.Div([
 
 def update_graph(si_slctd):
     '''
-    Define the callback function to render filtered
-    pandas dataframe based on user's input value in Dropdown
-    'small_bussines_incentives'
+    Render the graph on the Social Investment tab based on
+    based on user's input value in Dropdown component
+    'select_type'. This returned figure
+    feeds into the si_layout variable which
+    stores the frontend for Social Investment tab.
+
+    Input: 
+        si_slctd - value selected by user in the dropdown component
     '''
-    #container_social investment = "The SI type selected by the user is {}".format(sb_slctd)
     SI_copy = social_inv.copy()
     SI_copy.dropna(subset=[si_slctd], inplace = True)
     graphtitle = si_slctd.lower().capitalize() + 'social investment disaggregated at ward-level'
