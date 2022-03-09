@@ -42,7 +42,7 @@ def update_graph(si_slctd):
     pandas dataframe based on user's input value in Dropdown
     'small_bussines_incentives'
     '''
-    #container_crime = "The crime type selected by the user is {}".format(sb_slctd)
+    #container_social investment = "The SI type selected by the user is {}".format(sb_slctd)
     SI_copy = social_inv.copy()
     SI_copy.dropna(subset=[si_slctd], inplace = True)
     graphtitle = si_slctd.lower().capitalize() + 'social investment disaggregated at ward-level'
