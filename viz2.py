@@ -5,6 +5,7 @@ import plotly.express as px
 
 # Connect to the layout and callback of different tabs
 from crime_tab import crime_layout
+from social_inv_tab import si_layout
 
 # App Layout with Tabs
 def make_layout():
@@ -17,9 +18,9 @@ def make_layout():
         dcc.Tabs(id = "tabs", value = "tab-crime", children = 
             [
                 dcc.Tab(label="Crime", value="tab-crime"),
-                dcc.Tab(label="FSA", value = "tab-fsa"),
-                dcc.Tab(label="Small Businesses", value = "tab-sb"),
-                dcc.Tab(label="Microloans", value = "tab-microloan")
+                dcc.Tab(label="Social Investment", value = "tab-si"),
+                #dcc.Tab(label="Small Businesses", value = "tab-sb"),
+               # dcc.Tab(label="Microloans", value = "tab-microloan")
             ]),
         html.Div(id = 'content', children = [])
     ])
@@ -38,3 +39,5 @@ def select_tab(tab_slctd):
     '''
     if tab_slctd == "tab-crime":
         return crime_layout
+    elif tab_slctd == "tab-si":
+        return si_layout
