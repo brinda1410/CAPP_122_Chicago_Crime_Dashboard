@@ -1,5 +1,8 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt #if using matplotlib
+import plotly.express as px #if using plotly
+import geopandas as gpd
 
 # Creates the Index:
 
@@ -28,4 +31,10 @@ else:
     error = error / div
 
 df["index"] = error.reshape(1, 50)[0]
+df = df[['WARD', 'index']]
+df["WARD"] = df["WARD"].astype(str)
 
+fp = "wards geofiles/WARDS_2015.shx"
+map_df = gpd.read_file(fp)
+map_df = map_df.merge(df, on = 'WARD')
+map_df.plot('index', cmap='bwr',legend=True)
