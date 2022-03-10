@@ -9,7 +9,7 @@ MENU = '''
 Welcome to the crime visualization application! Please choose
 an option to perform a task.
 (1) Update Data from Source
-(2) Use saved data (up to Feb/22/22)
+(2) Open the visualizations
 (3) Quit the program
 '''
 START = 1
