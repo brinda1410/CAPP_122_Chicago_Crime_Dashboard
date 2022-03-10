@@ -79,7 +79,6 @@ def update_graph(si_slvaluectd):
     fig = px.choropleth(map_df,
                    geojson=map_df.geometry,
                    locations=map_df.index,
-                   color=si_slvaluectd,
-                   projection="mercator")
+                   color=si_slvaluectd)
     fig.update_geos(fitbounds="locations", visible=False)  
     return fig
