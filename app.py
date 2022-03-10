@@ -6,7 +6,7 @@ Run this command in bash: python3 app.py
 '''
 
 from maindash import app
-from viz2 import make_layout
+from viz import make_layout
 import webbrowser
 from threading import Timer
 
