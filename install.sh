@@ -9,4 +9,4 @@ python crimes_main.py
 
 deactivate
 rm -r env
-echo -e "Bye bye <3"
+echo -e "Bye bye! :D"

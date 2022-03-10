@@ -55,7 +55,12 @@ def update_graph(si_slctd):
     '''
     SI_copy = social_inv.copy()
     SI_copy.dropna(subset=[si_slctd], inplace = True)
-    graphtitle = si_slctd.lower().capitalize() + 'social investment disaggregated at ward-level'
+    if si_slctd == "FS AGENCIES":
+        graphtitle = "Number of Family Support Agencies disaggregated at ward-level"
+    elif si_slctd == "SB FUNDS":
+        graphtitle = "Total investment through the Small Business Improvement Fund disaggregated at ward-level"
+    else:
+        graphtitle = "Number of loans given by the Chicago Microlending institute disaggregated at ward-level"
     fig = px.bar(SI_copy, x = 'WARD', y = si_slctd, title = graphtitle)
 
     return fig
