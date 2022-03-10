@@ -1,6 +1,11 @@
+'''
+This module merge the csv files into one dataset with the chosen variables
+aggregated at ward level.
+'''
+
 import pandas as pd
 
-#Files directory
+# Files directory
 small_business = "data\SB.csv"
 crimes = "data\Crimes.csv"
 family_support = "data\FSA.csv"
@@ -11,12 +16,12 @@ crimes_df = pd.read_csv(crimes)
 fs_df = pd.read_csv(family_support)
 ml_df = pd.read_csv(microloans)
 
-# Small Business DF - Collapsing the counts and grouping them by WARD
+# Small Business DF
 sb_df = sb_df[["INCENTIVE_AMOUNT", "WARD"]]
 sb_df = sb_df.groupby("WARD").sum()
 sb_df = sb_df.rename(columns={"INCENTIVE_AMOUNT": "SB FUNDS"})
 
-# Family Support Agencies DF - Fixing Ward variable and grouping the observations
+# Family Support Agencies DF
 fs_df = fs_df.dropna(subset=["WARD"])
 fs_df["WARD"] = fs_df["WARD"].astype(int)
 fs_df = fs_df.rename(columns={"AGENCY": "FS AGENCIES"})
@@ -30,7 +35,7 @@ ml_df = ml_df.rename(columns={"LENDER": "MICRO LOANS"})
 ml_df = ml_df.groupby("WARD").count()
 ml_df = ml_df[["MICRO LOANS"]]
 
-#Crimes
+# Crimes
 crimes_df = crimes_df.dropna(subset=["WARD"])
 crimes_df["WARD"] = crimes_df["WARD"].astype(int)
 crimes_df = crimes_df.rename(columns={"PRIMARY_TYPE": "TYPE OF CRIME"})

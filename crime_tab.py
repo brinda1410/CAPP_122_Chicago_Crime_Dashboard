@@ -14,7 +14,10 @@ crimes = pd.read_csv(merged_filename)
 
 # Subset WARD and crime-type columns
 crimes = crimes.loc[:, 'WARD': 'WEAPONS VIOLATION']
-crimes.drop(['FS AGENCIES', 'SB FUNDS', 'MICRO LOANS'], axis = 1, inplace = True)
+crimes.drop(['FS AGENCIES', 'SB FUNDS', 'MICRO LOANS'],
+            axis = 1,
+            inplace = True)
+
 # Remove WARD column
 col_names = crimes.columns[1:]
 
@@ -24,7 +27,8 @@ col_names = crimes.columns[1:]
 crime_layout = html.Div([
         html.H2("Crime Data", style = {'text-align': 'left'}),
         html.Br(),
-        html.Label(['Select Type of Crime:'], style={'font-weight': 'bold', "text-align": "left"}),
+        html.Label(['Select Type of Crime:'], style={'font-weight': 'bold',
+                                                     "text-align": "left"}),
         html.Br(),
         dcc.Dropdown(id = "select_crimetype",
                     options = [{"label": str(x), "value": x} for x in col_names],
@@ -37,10 +41,8 @@ crime_layout = html.Div([
 # --------------------------- BACKEND -----------------------------------  
 # Connect the figure contained in Dash Core Components with the frontend
 
-@app.callback(
-    Output(component_id = 'bar_graph_crime_type_by_ward', component_property = 'figure'),
-    [Input(component_id = 'select_crimetype', component_property = 'value')]
-    )
+@app.callback(Output(component_id = 'bar_graph_crime_type_by_ward', component_property = 'figure'),
+            [Input(component_id = 'select_crimetype', component_property = 'value')])
 
 def update_graph(crime_slctd):
     '''
@@ -56,6 +58,7 @@ def update_graph(crime_slctd):
     crimes_copy = crimes.copy()
     crimes_copy.dropna(subset=[crime_slctd], inplace = True)
     graphtitle = crime_slctd.lower().capitalize() + ' crimes disaggregated at ward-level'
-    fig = px.bar(crimes_copy, x = 'WARD', y = crime_slctd, title = graphtitle)
+    fig = px.bar(crimes_copy, x = 'WARD',
+                            y = crime_slctd,
+                            title = graphtitle)
     return fig
-

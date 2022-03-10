@@ -1,8 +1,7 @@
 '''
-This is an application module that allows a user to select if
-running the API or not, and then run the application.
+This is an application module that allows a user to select to download data
+from the Chicago Data Portal through an API, and then run the application.
 '''
-
 
 MENU = '''
 ********* Crime Visualization Module *********
@@ -40,7 +39,6 @@ def update_data():
     exec(open(api_collection).read())
     exec(open(join_data).read())
 
-
 def run_app():
     exec(open(app_script).read())
 
@@ -55,3 +53,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
