@@ -58,7 +58,11 @@ def update_graph(si_slctd):
         graphtitle = "Number of loans given by the Chicago Microlending institute disaggregated at ward-level"
 
     fig = px.bar(SI_copy, x = 'WARD',
+                        color = si_slctd,
+                        color_continuous_scale = 'RdBu',
                         y = si_slctd,
                         title = graphtitle)
+    fig.layout.plot_bgcolor = '#DCDCDC'
+    fig.layout.paper_bgcolor = '#fff'
 
     return fig

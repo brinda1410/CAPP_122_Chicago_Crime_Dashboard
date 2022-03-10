@@ -43,7 +43,7 @@ df["INDEX ANALYSIS"] = error.reshape(1, 50)[0]
 va_int = ['WARD', 'INDEX ANALYSIS','FS AGENCIES',
           'SB FUNDS', 'MICRO LOANS','ALL CRIMES']
 col_names = va_int[1:]
-df = df[va_int]
+df = df[va_int].fillna(0)
 df["WARD"] = df["WARD"].astype(str)
 
 # GeoPandas dataframe
@@ -55,18 +55,15 @@ map_df = map_df.merge(df, on = 'WARD')
 # ---------------------------- FRONT-END -------------------------------
 # App layout for the Chicago choropleth map tab
 hm_layout = html.Div([
-        html.H2("Chicago Choropleth Map", style = {'text-align': 'left'}),
-        html.Br(),
-        html.Label(['Select Variable:'], style={'font-weight': 'bold',
-                                                "text-align": "left"}),
-        html.Br(),
-        dcc.Dropdown(id = "select_type",
-                    options = [{"label": str(x), "value": x} for x in col_names], 
-                    value = col_names[0],
-                    multi = False,
-                    style = {'width': "40%"}),
+        html.H4('Chicago Choropleth Map'),
+        html.P("Select Variable:"),
+        dcc.RadioItems(
+            id="select_type", 
+            options=[{"label": str(x), "value": x} for x in col_names],
+            value=col_names[0],
+            inline=True),
         dcc.Graph(id = 'map_by_ward', figure = {})
-    ])
+        ])
 
 # --------------------------- BACKEND -----------------------------------  
 # Connect the figure contained in Dash Core Components with the frontend
@@ -84,9 +81,10 @@ def update_graph(si_slvaluectd):
     ''' 
     map_df.set_index('WARD')
     fig = px.choropleth(map_df,
-                   geojson=map_df.geometry,
-                   locations=map_df.index,
-                   color=si_slvaluectd)
+                    geojson=map_df.geometry,
+                    locations=map_df.index,
+                    color_continuous_scale = 'RdBu',
+                    color=si_slvaluectd)
     fig.update_geos(fitbounds="locations", visible=False)  
-    
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     return fig
