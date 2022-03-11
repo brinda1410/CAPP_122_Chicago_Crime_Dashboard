@@ -61,5 +61,5 @@ def update_graph(crime_slctd):
     fig = px.bar(crimes_copy, x = 'WARD',
                             y = crime_slctd,
                             title = graphtitle)
-    fig.layout.plot_bgcolor = '#DCDCDC'
+    fig.layout.plot_bgcolor = '#f3f3f0'
     return fig
