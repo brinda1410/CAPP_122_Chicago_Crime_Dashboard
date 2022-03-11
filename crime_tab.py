@@ -59,11 +59,11 @@ def update_graph(crime_slctd):
     crimes_copy.dropna(subset=[crime_slctd], inplace = True)
     graphtitle = crime_slctd.lower().capitalize() + ' crimes disaggregated at ward-level'
     fig = px.bar(crimes_copy, x = 'WARD',
-                            color = crime_slctd,
-                            color_continuous_scale = 'RdBu',
                             y = crime_slctd,
                             title = graphtitle)
-    fig.layout.plot_bgcolor = '#DCDCDC'
-    fig.layout.paper_bgcolor = '#fff'
+    #fig.layout.plot_bgcolor = '#DCDCDC'
+    #fig.layout.paper_bgcolor = '#fff'
     
+    #color = crime_slctd,
+    #                        color_continuous_scale = 'RdBu',
     return fig
