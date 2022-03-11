@@ -50,7 +50,7 @@ df["WARD"] = df["WARD"].astype(str)
 fp = "wards geofiles/WARDS_2015.shx"
 map_df = gpd.read_file(fp)
 map_df.to_crs(pyproj.CRS.from_epsg(4326), inplace=True)
-map_df = map_df.merge(df, on = 'WARD')
+map_df = map_df.merge(df, on = 'WARD').set_index('WARD')
 
 # ---------------------------- FRONT-END -------------------------------
 # App layout for the Chicago choropleth map tab
@@ -78,8 +78,8 @@ def update_graph(si_slvaluectd):
 
     Input: 
         si_slctd - value selected by user in the dropdown component
-    ''' 
-    map_df.set_index('WARD')
+    '''
+    
     fig = px.choropleth(map_df,
                     geojson=map_df.geometry,
                     locations=map_df.index,
