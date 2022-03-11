@@ -17,7 +17,12 @@ def make_layout():
     '''
     App layout with tabs
     '''
-    return html.Div([
+    colors = {
+    'background': '#001102',
+    'text': '#7FDBFF'
+    }
+
+    return html.Div(style={'backgroundColor': colors['background']}, children = [
         html.H1("Ward-level data, Chicago (2020)", style = {"textAlign": "center"}),
         html.Hr(),
         dcc.Tabs(id = "tabs", value = "tab-crime", children = 
