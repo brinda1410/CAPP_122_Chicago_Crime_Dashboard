@@ -6,10 +6,10 @@ aggregated at ward level.
 import pandas as pd
 
 # Files directory
-small_business = "data\SB.csv"
-crimes = "data\Crimes.csv"
-family_support = "data\FSA.csv"
-microloans = "data\Microloans.csv"
+small_business = "data/SB.csv"
+crimes = "data/Crimes.csv"
+family_support = "data/FSA.csv"
+microloans = "data/Microloans.csv"
 
 sb_df = pd.read_csv(small_business)
 crimes_df = pd.read_csv(crimes)
@@ -46,4 +46,4 @@ df = fs_df.join(sb_df)
 df = df.join(ml_df)
 df = df.join(crimes_df)
 
-df.to_csv("data\merged_data.csv")
+df.to_csv("data/merged_data.csv")

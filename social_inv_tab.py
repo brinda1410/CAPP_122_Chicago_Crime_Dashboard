@@ -60,7 +60,7 @@ def update_graph(si_slctd):
     fig = px.bar(SI_copy, x = 'WARD',
                         y = si_slctd,
                         title = graphtitle)
-    #fig.layout.plot_bgcolor = '#DCDCDC'
+    fig.layout.plot_bgcolor = '#DCDCDC'
     #fig.layout.paper_bgcolor = '#fff'
     #                    color = si_slctd,
     #                    color_continuous_scale = 'RdBu',
