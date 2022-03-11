@@ -62,7 +62,16 @@ hm_layout = html.Div([
             options=[{"label": str(x), "value": x} for x in col_names],
             value=col_names[0],
             inline=True),
-        dcc.Graph(id = 'map_by_ward', figure = {})
+        dcc.Graph(id = 'map_by_ward', figure = {}),
+        dcc.Textarea(readOnly = True,
+                     wrap  = True,
+                     value = 'Based on the idea that policymakers should direct more funding to the most vulnerable communities to equate opportunities, ' +
+                            'we explore the relationship between crimes incidence and social investment through a multivariate regression model using the ' + 
+                            'number of crimes (ALL CRIMES) at ward level as dependent variable, and multiple proxies of social investment described in previous ' +
+                            'tabs as regressors. Using the residuals of this model, we build an index (INDEX ANALYSIS) between -1 and 1 which shows how this ' + 
+                            'relationship across wards. In a ideal scenario, the choroplet must be "uninformative" as far as the ratio "investment"/"crime" would be homogeneous '+
+                            'across wards. Otherwise, negative values could give us signals social underinvestment.',
+                     style = {"width" : "100%", 'height': 80})
         ])
 
 # --------------------------- BACKEND -----------------------------------  
