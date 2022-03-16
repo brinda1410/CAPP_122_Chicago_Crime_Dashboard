@@ -68,7 +68,7 @@ hm_layout = html.Div([
                             'number of crimes (ALL CRIMES) at ward level as dependent variable, and multiple proxies of social investment described in previous ' +
                             'tabs as regressors. Using the residuals of this model, we build an index (INDEX ANALYSIS) between -1 and 1 which shows how this ' + 
                             'relationship across wards. In a ideal scenario, the choroplet must be "uninformative" as far as the ratio "investment"/"crime" would be homogeneous '+
-                            'across wards. Otherwise, negative values could give us signals social underinvestment.',
+                            'across wards. Otherwise, positive values could give us signals social underinvestment.',
                      style = {"width" : "100%", 'height': 80})
         ])
 
