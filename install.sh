@@ -5,7 +5,7 @@ echo -e "2. Installing Requirements..."
 
 source env/bin/activate
 pip install -r requirements.txt
-python3 crimes_main.py
+python -m crimes_app
 
 deactivate
 rm -r env

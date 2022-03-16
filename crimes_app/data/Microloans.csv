@@ -1,0 +1,253 @@
+LOAN_DATE,LENDER,CITY,STATE,INDUSTRY,WARD
+2014-04-24T00:00:00.000,Accion,Chicago,IL,Other Services,
+2013-09-06T00:00:00.000,Accion,Chicago,IL,Construction/Repair,9
+2013-08-13T00:00:00.000,CNI,Chicago,IL,Food/Beverage,9
+2014-12-02T00:00:00.000,Accion,Dolton,IL,Construction/Repair,
+2014-04-14T00:00:00.000,Accion,Chicago,IL,Day Care,17
+2015-03-05T00:00:00.000,Accion,Chicago,IL,Other Construction/Repair,
+2015-03-24T00:00:00.000,Accion,Chicago,IL,Other Services,
+2015-03-16T00:00:00.000,Accion,Chicago,IL,Food/Beverage,10
+2014-11-20T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,8
+2014-07-08T00:00:00.000,Accion,Chicago,IL,Other Services,35
+2013-08-25T00:00:00.000,Accion,Chicago,IL,Construction/Repair,29
+2013-01-10T00:00:00.000,CNI,Chicago,IL,Retail Sales - Other,4
+2014-12-12T00:00:00.000,Accion,Chicago,IL,Construction/Repair,9
+2015-04-01T00:00:00.000,CNI,Chicago,IL,Other Services - Tire Repair,21
+2014-11-25T00:00:00.000,Accion,Chicago,IL,transportation,7
+2014-05-08T00:00:00.000,CNI,Chicago,IL,Construction/Repair,39
+2015-06-16T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,45
+2013-10-02T00:00:00.000,WBDC,Chicago,IL ,Professional/Off Svc,5
+2015-03-17T00:00:00.000,Accion,Chicago,IL,Entertainment,28
+2013-06-12T00:00:00.000,WBDC,Chicago,IL,Other Services,27
+2013-05-23T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,37
+2015-12-11T00:00:00.000,WBDC,Chicago,IL,Retail Sales - Other,25
+2013-08-28T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,45
+2013-04-24T00:00:00.000,Accion,Chicago,IL,Other Services,35
+2014-06-26T00:00:00.000,Accion,Chicago,IL,Entertainment,27
+2016-01-15T00:00:00.000,CNI,Chicago,IL,Other Services,4
+2015-03-23T00:00:00.000,Accion,Chicago,IL,Other Services,33
+2015-08-06T00:00:00.000,CNI,Chicago,IL,Transportation,8
+2015-02-12T00:00:00.000,Accion,Chicago,IL,Retail sales,1
+2014-12-04T00:00:00.000,Accion,Chicago,IL,Construction/Repair,29
+2013-11-30T00:00:00.000,Accion,Chicago,IL,Other Services,12
+2013-03-18T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,16
+2014-07-18T00:00:00.000,Accion,Chicago,IL,Retail Stores,1
+2015-10-08T00:00:00.000,WBDC,Chicago,IL,Retail Sales - Other,4
+2015-08-28T00:00:00.000,Accion,Chicago,IL,Other Services,17
+2015-02-23T00:00:00.000,Accion,Chicago,IL,Other Services,19
+2013-02-28T00:00:00.000,CNI,Chicago,IL,Construction/Repair,16
+2013-06-28T00:00:00.000,Accion,Chicago,IL,Medical Services,29
+2013-04-05T00:00:00.000,Accion,Chicago,IL,Other Services,42
+2013-02-27T00:00:00.000,Accion,Chicago,IL,Food/Beverage,25
+2013-02-20T00:00:00.000,Accion,Chicago,IL,Food/Beverage,42
+2013-08-08T00:00:00.000,WBDC,Chicago,IL,Retail Sales - Other,25
+2013-08-30T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,18
+2013-05-31T00:00:00.000,Accion,Chicago,IL,Medical Services,47
+2015-03-12T00:00:00.000,Accion,Chicago ,IL,Auto/Vehicle,26
+2014-11-24T00:00:00.000,Accion,Chicago,IL,Medical Services,4
+2014-06-30T00:00:00.000,Accion,Chicago,IL,Retail Stores,32
+2013-10-07T00:00:00.000,WBDC,Chicago,IL,Other Services,25
+2015-03-30T00:00:00.000,Accion,Chicago,IL,Retail Sales ,32
+2014-10-20T00:00:00.000,Accion,Chicago,IL,Medical Services,19
+2013-06-14T00:00:00.000,Accion,Chicago,IL,Other Services,1
+2013-10-07T00:00:00.000,WBDC,Chicago,IL,Other Services,2
+2013-04-26T00:00:00.000,Accion,Chicago,IL,Food/Beverage,34
+2014-11-06T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,19
+2015-08-31T00:00:00.000,Accion,Chicago,IL,Retail Services - Other,21
+2015-05-01T00:00:00.000,WBDC,Chicago,IL,Retail Sales - Other,26
+2013-10-07T00:00:00.000,WBDC,Chicago,IL,Professional/Off Svc,2
+2013-07-15T00:00:00.000,WBDC,Chicago,IL,Construction/Repair,25
+2015-12-23T00:00:00.000,CNI,Chicago,IL,Professional/Off Svc,42
+2013-08-30T00:00:00.000,Accion,Chicago,IL,Auto/Vehicle,42
+2014-08-15T00:00:00.000,Accion,Chicago,IL,Education,47
+2015-11-09T00:00:00.000,WBDC,Chicago,IL,Enviromental Consulting,40
+2013-03-15T00:00:00.000,CNI,Chicago,IL,Retail Sales - Other,6
+2015-12-11T00:00:00.000,CNI,Chicago,IL,Other Services - Education,8
+2014-04-09T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,18
+2013-05-07T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,21
+2014-05-20T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,31
+2014-07-25T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,14
+2014-08-14T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,9
+2013-04-24T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,4
+2015-06-29T00:00:00.000,CNI,Chicago,IL,Transportation,21
+2015-05-15T00:00:00.000,WBDC,Chicago,IL,Retail Sales - Other,25
+2012-11-10T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,7
+2015-11-03T00:00:00.000,WBDC,Chicago,IL,Entertainment/Manufacturing,2
+2015-08-04T00:00:00.000,CNI,Chicago,IL,Other Services - Barbershop,16
+2012-10-20T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,24
+2012-12-10T00:00:00.000,Accion,Chicago,IL,Medical Services,6
+2012-11-10T00:00:00.000,Accion,Chicago,IL,Wholesale,47
+2013-09-12T00:00:00.000,CNI,Chicago,IL,Construction/Repair,34
+2013-12-09T00:00:00.000,Accion,Chicago,IL,Wholesale,25
+2015-01-15T00:00:00.000,CNI,Chicago,IL,Service,5
+2015-10-06T00:00:00.000,Accion,Chicago,IL,Entertainment,1
+2013-04-19T00:00:00.000,WBDC,Chicago,IL,,49
+2012-11-10T00:00:00.000,Accion,Chicago,IL,Clothing/Material Production,32
+2015-02-13T00:00:00.000,Accion,Chicago,IL,Restaurant - Full Service,23
+2013-07-23T00:00:00.000,WBDC,Chicago,IL,Day Care,39
+2013-04-29T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,43
+,WBDC,Chicago,IL,Retail Sales - Other,38
+2015-01-30T00:00:00.000,WBDC,Chicago,IL,Professional/Off Svc,42
+2013-05-20T00:00:00.000,Accion,Chicago,IL,Clothing/Material Production,27
+2014-05-01T00:00:00.000,CNI,Chicago,IL,Construction/Repair,9
+2015-12-23T00:00:00.000,WBDC,Chicago,IL,Day Care,11
+2013-05-18T00:00:00.000,Accion,Chicago,IL,Food/Beverage,12
+2015-04-07T00:00:00.000,WBDC,Chicago,IL,Other Services,2
+2013-05-10T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,4
+2016-01-18T00:00:00.000,Accion,Chicago,IL,Other Services,42
+2015-02-18T00:00:00.000,Accion,Chicago,IL,Restaurant - Full Service,26
+2015-12-11T00:00:00.000,CNI,Chicago,IL,Manufacturing,19
+2015-09-22T00:00:00.000,CNI,Chicago,IL,Other Services,7
+2013-02-28T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,19
+2016-02-16T00:00:00.000,Accion,Chicago,IL,Food/Beverage,12
+2014-11-19T00:00:00.000,Accion,CHICAGO,IL,Retail Stores,22
+2013-06-25T00:00:00.000,WBDC,Chicago,IL,Retail Sales - Other,25
+2013-05-02T00:00:00.000,CNI,Chicago,IL,Professional/Off Svc,42
+2015-12-11T00:00:00.000,Accion,Chicago,IL,Medical Services,47
+2015-06-03T00:00:00.000,Accion,Chicago,IL,Construction/Repair,20
+2013-04-30T00:00:00.000,Accion,Chicago,IL,Day Care,1
+2013-07-03T00:00:00.000,CNI,Chicago,IL,Construction/Repair,18
+2013-08-30T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,47
+2013-08-21T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,47
+2013-05-30T00:00:00.000,CNI,Chicago,IL,Education,4
+2015-12-16T00:00:00.000,Accion,Chicago,IL,Food/Beverage,35
+2013-03-20T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,23
+2013-05-13T00:00:00.000,Accion,Chicago,IL,Food/Beverage,28
+2012-11-10T00:00:00.000,Accion,Chicago,IL,Clothing/Material Production,43
+2012-12-20T00:00:00.000,Accion,Chicago,IL,Food/Beverage,6
+2015-04-16T00:00:00.000,Accion,Chicago,IL,Other Services,28
+2015-04-07T00:00:00.000,WBDC,Chicago,IL,,47
+2015-02-26T00:00:00.000,Accion,Chicago,IL,Electronics,4
+2012-01-10T00:00:00.000,Accion,Chicago,IL,Retail Stores,25
+2014-05-21T00:00:00.000,Accion,Chicago,IL,Auto/Vehicle,8
+2014-11-10T00:00:00.000,Accion,Chicago,IL,Day Care,34
+2013-08-28T00:00:00.000,WBDC,Chicago,IL,Transportation,15
+2013-11-27T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,22
+2015-03-19T00:00:00.000,Accion,Chicago,IL,Transportation,26
+2014-07-24T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,26
+2013-10-07T00:00:00.000,WBDC,Chicago,IL,Retail Sales - Other,32
+2012-04-10T00:00:00.000,Accion,Chicago,IL,Day Care,47
+2014-10-22T00:00:00.000,Accion,Chicago,IL,Retail Stores,5
+2015-03-04T00:00:00.000,Accion,Chicago,IL,Retail Stores,38
+2014-04-29T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,48
+2013-04-27T00:00:00.000,Accion,Chicago,IL,Day Care,10
+2013-10-30T00:00:00.000,CNI,Chicago,IL,Transportation,9
+2015-04-24T00:00:00.000,CNI,Chicago,IL,Other Services - Cosmetology,25
+2015-10-06T00:00:00.000,Accion,Chicago,IL,Food/Beverage,25
+2014-07-30T00:00:00.000,Accion,Chicago,IL,Auto/Vehicle,36
+2013-08-05T00:00:00.000,CNI,Chicago,IL,Other Services,27
+2013-08-05T00:00:00.000,CNI,Chicago,IL,Other Services,27
+2014-12-05T00:00:00.000,Accion,Chicago,IL,Food/Beverage,29
+2014-12-05T00:00:00.000,Accion,Chicago,IL,Day Care,21
+2012-12-04T00:00:00.000,CNI,Chicago,IL,Food/Beverage,5
+2015-02-02T00:00:00.000,Accion,Chicago,IL,Retail Stores,32
+2013-11-19T00:00:00.000,Accion,Chicago,IL,Food/Beverage,3
+2014-08-26T00:00:00.000,Accion,Chicago,IL,Retail Stores,35
+2013-10-04T00:00:00.000,CNI,Chicago,IL,Food/Beverage,3
+2013-04-26T00:00:00.000,Accion,Chicago,IL,Wholesale,43
+2012-01-10T00:00:00.000,Accion,Chicago,IL,Medical Services,39
+2015-03-23T00:00:00.000,Accion,Chicago,IL,Manufacturing,12
+2015-02-25T00:00:00.000,Accion,CHICAGO,IL,Restaurant - Full Service,39
+2015-02-06T00:00:00.000,Accion,Chicago,IL,Clothing Design/Mfg,6
+2014-10-17T00:00:00.000,Accion,Chicago,IL,Auto/Vehicle,37
+2013-04-22T00:00:00.000,CNI,Chicago,IL,Professional/Off Svc,6
+2015-05-26T00:00:00.000,WBDC,Chicago,IL,,4
+2013-09-19T00:00:00.000,WBDC,Chicago,IL,Professional/Off Svc,31
+2013-10-31T00:00:00.000,Accion,Chicago,IL,Food/Beverage,12
+2013-05-30T00:00:00.000,CNI,Chicago,IL,Transportation,18
+2016-01-28T00:00:00.000,Accion,Chicago,IL,Arts/Crafts Production,28
+2014-07-29T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,8
+2013-11-25T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,3
+2013-06-10T00:00:00.000,WBDC,Chicago,IL,Professional/Off Svc,1
+2013-09-18T00:00:00.000,WBDC,Chicago,IL,Professional/Off Svc,18
+2016-01-13T00:00:00.000,WBDC,Chicago,IL,Construction/Repair,5
+2013-05-30T00:00:00.000,CNI,Chicago,IL,Other Services,20
+2013-12-11T00:00:00.000,CNI,Chicago,IL,IT/Manufacturing,28
+2013-11-15T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,46
+2013-12-16T00:00:00.000,Accion,Chicago,IL,Retail Stores,42
+2012-12-17T00:00:00.000,Accion,Chicago,IL,Food/Beverage,46
+2014-11-18T00:00:00.000,Accion,Chicago,IL,Day Care,7
+2015-05-07T00:00:00.000,WBDC,Chicago,IL,Professional/Off Svc,1
+2014-03-03T00:00:00.000,CNI,Chicago,IL,Professional/Off Svc,42
+2014-09-30T00:00:00.000,Accion,Chicago,IL,Day Care,3
+2013-05-30T00:00:00.000,CNI,Chicago,IL,Transportation,2
+2013-04-24T00:00:00.000,Accion,Chicago,IL,Other Services,35
+2013-11-06T00:00:00.000,WBDC,Chicago,IL,,47
+2015-11-25T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,46
+2012-12-10T00:00:00.000,Accion,Chicago,IL,Other Services,1
+2013-05-06T00:00:00.000,Accion,Chicago,IL,Food/Beverage,27
+2013-04-19T00:00:00.000,WBDC,Chicago,IL,Beauty/Salon Services,2
+2013-05-29T00:00:00.000,Accion,Chicago,IL,Wholesale,48
+2014-06-13T00:00:00.000,Accion,Chicago,IL,Construction/Repair,6
+2012-11-20T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,15
+2016-02-02T00:00:00.000,Accion,Chicago,IL,Food/Beverage,44
+2013-12-17T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,4
+2014-09-16T00:00:00.000,CNI,Chicago,IL,Catering,3
+2013-10-07T00:00:00.000,CNI,Chicago,IL,Transportation,9
+2013-08-05T00:00:00.000,CNI,Chicago,IL,Construction/Repair,27
+2013-04-17T00:00:00.000,Accion,Chicago,IL,Other Services,25
+2013-08-16T00:00:00.000,CNI,Chicago,IL,Other Services,7
+2015-01-07T00:00:00.000,CNI,Chicago,IL,Construction,6
+2013-05-25T00:00:00.000,CNI,Chicago,IL,Construction/Repair,3
+2013-10-18T00:00:00.000,CNI,Chicago,IL,Professional/Off Svc,39
+2014-11-25T00:00:00.000,Accion,Chicago,IL,Other Services,38
+2014-09-03T00:00:00.000,Accion,Chicago,IL,Medical Services,36
+2013-10-31T00:00:00.000,WBDC,Chicago,IL,Transportation,2
+2015-09-29T00:00:00.000,Accion,Chicago,IL,Retail Stores,1
+2013-03-11T00:00:00.000,Accion,Chicago,IL,Arts/Crafts Production,47
+2016-02-16T00:00:00.000,Accion,Chicago,IL,Arts/Crafts Production,48
+2015-10-23T00:00:00.000,CNI,Chicago,IL,Professional/Off Svc,20
+2015-07-17T00:00:00.000,Accion,Chicago,IL,"Fashion, jewelry, art and sewing/ jewelry classes",25
+2015-08-07T00:00:00.000,WBDC,Chicago,IL,Construction/Repair,25
+2013-05-31T00:00:00.000,Accion,Chicago,IL,Other Services,18
+2014-04-04T00:00:00.000,CNI,Chicago,IL,Other Services,4
+2013-07-10T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,8
+2013-08-30T00:00:00.000,Accion,Chicago,IL,Food/Beverage,29
+2015-06-04T00:00:00.000,WBDC,Chicago,IL,,20
+2014-11-13T00:00:00.000,Accion,Chicago,IL,Food/Beverage,40
+2014-07-28T00:00:00.000,Accion,Chicago,IL,Construction/Repair,20
+2013-03-21T00:00:00.000,Accion,Chicago,IL,Medical Services,50
+2012-12-10T00:00:00.000,Accion,Chicago,IL,Retail Stores,32
+2013-07-16T00:00:00.000,Accion,Chicago,IL,Food/Beverage,1
+2013-11-14T00:00:00.000,Accion,Chicago,IL,Retail Stores,25
+2013-03-29T00:00:00.000,Accion,Chicago,IL,Food/Beverage,36
+2013-07-29T00:00:00.000,Accion,Chicago,IL,Beauty/Salon Services,8
+2015-09-10T00:00:00.000,CNI,Chicago,IL,Other Services,41
+2014-06-30T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,37
+2013-06-26T00:00:00.000,WBDC,Chicago,IL,Retail Sales - Other,39
+2015-04-01T00:00:00.000,CNI,Chicago,IL,Other Services - Childcare,6
+2013-12-16T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,26
+2015-02-23T00:00:00.000,Accion,Chicago,IL,Restaurant - Full Service,30
+2015-07-15T00:00:00.000,CNI,Chicago,IL,Other Services,7
+2014-12-12T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,42
+2013-04-15T00:00:00.000,CNI,Chicago,IL,Professional/Off Svc,8
+2013-05-25T00:00:00.000,CNI,Chicago,IL,Retail Sales - Other,32
+2013-10-04T00:00:00.000,WBDC,Chicago,IL,Education,6
+2015-03-09T00:00:00.000,CNI,Chicago,IL,Other Services -Childcare,18
+2012-10-20T00:00:00.000,Accion,Chicago,IL,Professional/Off Svc,3
+2012-12-04T00:00:00.000,CNI,Chicago,IL,Retail Sales - Other,21
+2016-02-16T00:00:00.000,CNI,Chicago,IL,Transportation,7
+2014-09-16T00:00:00.000,CNI,Chicago,IL,Construction,8
+2014-11-18T00:00:00.000,CNI,Chicago,IL,Service,6
+2014-06-18T00:00:00.000,WBDC,Chicago,IL,Professional/Off Svc,31
+2013-04-01T00:00:00.000,Accion,Chicago ,IL,Other Services,42
+2015-10-09T00:00:00.000,CNI,Chicago,IL,Retail Sales - Other,5
+2015-07-15T00:00:00.000,CNI,Chicago,IL,Other Services,27
+2013-01-11T00:00:00.000,CNI,Chicago,IL,Transportation,9
+2013-11-08T00:00:00.000,WBDC,Chicago,IL,Medical Services,47
+2016-01-29T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,42
+2015-02-23T00:00:00.000,CNI,Chicago,IL,Food/Beverage,9
+2013-03-29T00:00:00.000,Accion,Chicago,IL,Food/Beverage,17
+2014-06-30T00:00:00.000,Accion,Chicago,IL,Retail Stores,25
+2012-11-10T00:00:00.000,Accion,Chicago,IL,Food/Beverage,2
+2014-01-30T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,13
+2016-02-10T00:00:00.000,CNI,Chicago,IL,Manufacturing,5
+2013-03-19T00:00:00.000,Accion,Chicago,IL,Other Services,36
+2014-04-25T00:00:00.000,CNI,Chicago,IL,Professional/Off Svc,2
+2014-09-15T00:00:00.000,CNI,Chicago,IL,Real Estate Consultant,42
+2012-11-10T00:00:00.000,Accion,Chicago,IL,Clothing/Material Production,11
+2012-12-10T00:00:00.000,Accion,Chicago,IL,Retail Sales - Other,21
+2013-05-09T00:00:00.000,Accion,Chicago,IL,Construction/Repair,13
+2012-12-20T00:00:00.000,Accion,Chicago,IL,Arts/Crafts Production,1
+2014-05-22T00:00:00.000,Accion,Chicago,IL,Food/Beverage,13
+2014-07-02T00:00:00.000,Accion,Chicago,IL,Food/Beverage,38
