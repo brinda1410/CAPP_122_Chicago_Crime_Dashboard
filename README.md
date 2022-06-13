@@ -1,5 +1,4 @@
-# proj-tipo_debuggers
-proj-tipo_debuggers created by GitHub Classroom
+# Chicago Crime Dashboard
 
 To run the project:
 1. Run the command "source install.sh" in the terminal bash
